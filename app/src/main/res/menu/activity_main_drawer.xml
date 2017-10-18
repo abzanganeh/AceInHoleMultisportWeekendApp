@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/long_course"
+            android:title="@string/long_course" />
+        <item
+            android:id="@+id/olympic"
+            android:title="@string/olympic" />
+        <item
+            android:id="@+id/ten_k"
+            android:title="@string/ten_k" />
+        <item
+            android:id="@+id/half_marathon"
+            android:title="@string/half_marathon" />
+        <item
+            android:id="@+id/sprint"
+            android:title="@string/sprint" />
+
+        <item
+            android:id="@+id/try_a_tri"
+            android:title="@string/try_a_tri" />
+        <item
+            android:id="@+id/splash_n_dash"
+            android:title="@string/splash_n_dash" />
+        <item
+            android:id="@+id/what_to_bring"
+            android:title="@string/what_to_bring" />
+        <item
+            android:id="@+id/registration"
+            android:title="@string/registration" />
+        <item
+            android:id="@+id/faq"
+            android:title="@string/faq" />
+
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

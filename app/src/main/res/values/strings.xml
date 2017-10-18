@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AIHMultisportWeekendApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="registration">Registration </string>
+    <string name="what_to_bring">What to Bring? </string>
+    <string name="faq">FAQ\'s </string>
+    <string name="ace_name">Ace In the Hole</string>
+    <string name="ace_sndpart_name">MultiSport Weekend</string>
+    <string name="saturday">Saturday 12/16/2017</string>
+    <string name="sunday">Sunday     12/17/2017</string>
+    <string name="long_course">Long Course</string>
+    <string name="olympic">Olympic</string>
+    <string name="ten_k">10 K</string>
+    <string name="half_marathon">Half Marathon</string>
+    <string name="sprint">Sprint</string>
+    <string name="try_a_tri">Try-a-Tri</string>
+    <string name="splash_n_dash">Splash n Dash</string>
+    <string name="begin">Let the Fun Begins</string>
+</resources>
