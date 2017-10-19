@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AIHMultisportWeekendApp.iml" filepath="$PROJECT_DIR$/AIHMultisportWeekendApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ace_in_hole_multisport_weekend_app.iml" filepath="$PROJECT_DIR$/ace_in_hole_multisport_weekend_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

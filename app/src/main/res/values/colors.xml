@@ -7,4 +7,5 @@
     <color name="colorBlack">#000000</color>
     <color name="colorTransBlack">#80000000</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransWhite">#80FFFFFF</color>
 </resources>

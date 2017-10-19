@@ -10,4 +10,6 @@
     <dimen name="min_dp">10dp</dimen>
     <dimen name="mid_snd_dp">20dp</dimen>
     <dimen name="title_font">28sp</dimen>
+    <dimen name="height_col">220dp</dimen>
+    <dimen name="width_col">100dp</dimen>
 </resources>
