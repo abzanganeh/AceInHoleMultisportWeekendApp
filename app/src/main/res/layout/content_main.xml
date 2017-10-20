@@ -62,6 +62,7 @@
                 android:id="@+id/saturday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/min_dp"
                 android:layout_weight="1"
                 android:fontFamily="serif"
                 android:gravity="center_horizontal"
@@ -122,6 +123,7 @@
                 android:id="@+id/sunday"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/min_dp"
                 android:layout_weight="1"
                 android:fontFamily="serif"
                 android:gravity="center_horizontal"
@@ -169,6 +171,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/mid_snd_dp"
         android:background="@android:drawable/ic_notification_overlay"
+        android:onClick="clickBeginEvents"
         android:padding="@dimen/min_dp"
         android:text="@string/begin"
         android:textColor="@color/colorWhite" />

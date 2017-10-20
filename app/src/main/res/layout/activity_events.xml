@@ -1,9 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="edu.pcc.alizanganeh.aihmultisportweekendapp.EventsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/banner_two"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mid_dp"
+        android:text="@string/title_events"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/events_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:padding="@dimen/mid_snd_dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:id="@+id/what_to_bring_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_red_background"
+        android:text="@string/what_to_bring"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/registration_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/what_to_bring_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mid_dp"
+        android:background="@drawable/round_red_background"
+        android:text="@string/registration"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/faq_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registration_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mid_dp"
+        android:background="@drawable/round_red_background"
+        android:text="@string/faq"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/things_to_know_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faq_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mid_dp"
+        android:background="@drawable/round_red_background"
+        android:text="@string/things_to_know"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

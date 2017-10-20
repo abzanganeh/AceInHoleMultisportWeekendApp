@@ -20,4 +20,6 @@
     <string name="try_a_tri">Try-a-Tri</string>
     <string name="splash_n_dash">Splash n Dash</string>
     <string name="begin">Let the Fun Begins</string>
+    <string name="title_events">Choose one you are interested:</string>
+    <string name="things_to_know">Thing You May Want to Know</string>
 </resources>
