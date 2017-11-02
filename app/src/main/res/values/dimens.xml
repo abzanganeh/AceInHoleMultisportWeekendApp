@@ -13,4 +13,5 @@
     <dimen name="height_col">220dp</dimen>
     <dimen name="width_col">100dp</dimen>
     <dimen name="button_width">300dp</dimen>
+    <dimen name="submit_button_width">150dp</dimen>
 </resources>
