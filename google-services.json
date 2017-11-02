@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "434075945510",
+    "firebase_url": "https://cas222-ali.firebaseio.com",
+    "project_id": "cas222-ali",
+    "storage_bucket": "cas222-ali.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434075945510:android:acda199a15633a89",
+        "android_client_info": {
+          "package_name": "edu.pcc.alizanganeh.aihmultisportweekwndapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434075945510-oohreeam16bccsaeh4ib91p2pdtq1as4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ12NlUh-Xd7nmX8fzYK2Z-g1aIMjSD3A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
