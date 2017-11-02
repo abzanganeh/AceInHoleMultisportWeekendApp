@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "434075945510",
+    "firebase_url": "https://cas222-ali.firebaseio.com",
+    "project_id": "cas222-ali",
+    "storage_bucket": "cas222-ali.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434075945510:android:acda199a15633a89",
+        "android_client_info": {
+          "package_name": "edu.pcc.alizanganeh.aihmultisportweekwndapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434075945510-oohreeam16bccsaeh4ib91p2pdtq1as4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ12NlUh-Xd7nmX8fzYK2Z-g1aIMjSD3A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434075945510:android:bdb466a4bd03e7cc",
+        "android_client_info": {
+          "package_name": "edu.pcc.alizanganeh.aihmultisportweekendapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434075945510-vq1p1v0upens75edae6a5n5ol6sd59al.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.pcc.alizanganeh.aihmultisportweekendapp",
+            "certificate_hash": "8f44a63d5e522adac15bb788d941983bef4b5ff3"
+          }
+        },
+        {
+          "client_id": "434075945510-oohreeam16bccsaeh4ib91p2pdtq1as4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ12NlUh-Xd7nmX8fzYK2Z-g1aIMjSD3A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434075945510-oohreeam16bccsaeh4ib91p2pdtq1as4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

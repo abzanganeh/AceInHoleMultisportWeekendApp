@@ -112,24 +112,43 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.long_course) {
-
+            Intent intent = new Intent(this, LongCourseActivity.class);
+            startActivity(intent);
         } else if (id == R.id.olympic) {
+            Intent intent = new Intent(this, OlympicActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.ten_k) {
+            Intent intent = new Intent(this, TenKActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.half_marathon) {
+            Intent intent = new Intent(this, HalfMarathonActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.sprint) {
+            Intent intent = new Intent(this, SprintActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.try_a_tri) {
+            Intent intent = new Intent(this, TryATriActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.splash_n_dash) {
+            Intent intent = new Intent(this, SplashNDashActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.what_to_bring) {
+            Intent intent = new Intent(this, WhatToBringActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.registration) {
+            Intent intent = new Intent(this, RegistrationActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.faq) {
+            Intent intent = new Intent(this, FAQActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

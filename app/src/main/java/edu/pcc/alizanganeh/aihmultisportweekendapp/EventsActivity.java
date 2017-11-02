@@ -22,7 +22,7 @@ public class EventsActivity extends AppCompatActivity{
     private Activity mContext;
     @BindView(R.id.events_list) Spinner mEventsList;
     @BindView(R.id.title) TextView mTitleEvent;
-    private String[] eventNames = {"Please select:","Long Course", "Olympic", "10K", "Half Marathon", "Sprint", "Try-a-Tri", "Splash n Dash"};
+    private String[] eventNames = {"","Long Course", "Olympic", "10K", "Half Marathon", "Sprint", "Try-a-Tri", "Splash n Dash"};
     private static final String TAG = EventsActivity.class.getSimpleName();
     private String spinnerText;
 
