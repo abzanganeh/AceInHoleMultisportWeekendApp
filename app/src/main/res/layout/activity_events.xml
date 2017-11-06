@@ -25,7 +25,8 @@
         android:layout_below="@+id/title"
         android:layout_marginTop="@dimen/min_dp"
         android:adjustViewBounds="true"
-        app:srcCompat="@drawable/banner_two" />
+        android:paddingEnd="50dp"
+        app:srcCompat="@drawable/banner_four" />
 
     <Spinner
         android:id="@+id/events_list"
@@ -44,6 +45,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/mid_dp"
         android:background="@drawable/round_red_background"
+        android:onClick="onClickWhatToBring"
         android:text="@string/what_to_bring"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
@@ -57,6 +59,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/mid_dp"
         android:background="@drawable/round_red_background"
+        android:onClick="onClickRegistration"
         android:text="@string/registration"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
@@ -70,6 +73,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/mid_dp"
         android:background="@drawable/round_red_background"
+        android:onClick="onClickFAQ"
         android:text="@string/faq"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
@@ -83,6 +87,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/mid_dp"
         android:background="@drawable/round_red_background"
+        android:onClick="onClickThingsToKnow"
         android:text="@string/things_to_know"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"

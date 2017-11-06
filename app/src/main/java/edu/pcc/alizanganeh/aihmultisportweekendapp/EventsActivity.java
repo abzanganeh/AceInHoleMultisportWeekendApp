@@ -32,6 +32,7 @@ public class EventsActivity extends AppCompatActivity{
         setContentView(R.layout.activity_events);
         ButterKnife.bind(this);
         mContext = this;
+
         Event longCourse = new Event( "Long Course", "Saturday","7:00 AM",LongCourseActivity.class, 240);
         Event olympic = new Event("Olympic", "Saturday","7:30 AM", OlympicActivity.class, 110);
         Event tenK = new Event("10K", "Saturday","7:15 AM", TenKActivity.class, 50);
@@ -82,5 +83,24 @@ public class EventsActivity extends AppCompatActivity{
 //        mTitleEvent.setText(event);
     }
 
+    public void onClickWhatToBring(View view){
+        Intent intent = new Intent(this, WhatToBringActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickRegistration(View view){
+        Intent intent = new Intent(this, RegistrationActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickFAQ(View view){
+        Intent intent = new Intent(this, FAQActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickThingsToKnow(View view){
+        Intent intent = new Intent(this, SplashNDashActivity.class);
+        startActivity(intent);
+    }
 
 }

@@ -35,4 +35,8 @@
     <string name="comment_hint">Please Enter Your Comments or Questions Here:</string>
     <string name="send_request">Send Request</string>
     <string name="note_text">Note:</string>
+    <string name="cost">Cost: </string>
+    <string name="swim">Swim: </string>
+    <string name="bike">Bike: </string>
+    <string name="run">Run: </string>
 </resources>
