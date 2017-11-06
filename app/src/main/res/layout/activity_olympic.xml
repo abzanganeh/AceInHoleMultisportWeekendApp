@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="7"
-                    android:text="1,500 meters - Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach."
+                    android:text="@string/olympic_swim_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -120,7 +120,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="8"
-                    android:text="28mi - A scenic point-to-point course that travels over gently rolling hills. The bike course will be marked with large directional signage and course marshals will be present at key intersections. "
+                    android:text="@string/olympic_bike_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -150,7 +150,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="8"
-                    android:text="10K - A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (one hill total with a minimal elevation gain)."
+                    android:text="@string/olympic_run_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>

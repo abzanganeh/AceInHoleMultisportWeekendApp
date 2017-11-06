@@ -101,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="7"
-                    android:text="1.2mi - Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.  "
+                    android:text="@string/long_course_swim_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -129,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="8"
-                    android:text="58 Miles: A scenic point-to-point course that travels over gently rolling hills prior to three hard climbs. The bike course will be marked with large directional signage and there will be course marshals at key intersections to help direct you. "
+                    android:text="@string/long_course_bike_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -159,7 +159,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="8"
-                    android:text="13.1mi - A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (two hills total with a minimal elevation gain)."
+                    android:text="@string/long_course_run_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>

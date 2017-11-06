@@ -93,7 +93,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="8"
-                    android:text="The 10K event starts and finishes in the Athletes Village. The paths are approximately 6 ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd."
+                    android:text="@string/tenk_k_run_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>

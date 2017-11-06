@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="7"
-                    android:text="This novice race is designed for the first time triathlete, those new to the sport, our Junior Triathletes. The swim is a shorter, more manageable 1/4 mile distance, (instead of the standard 1/2-mile Sprint distance swim)."
+                    android:text="@string/try_a_tri_swim_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -120,7 +120,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="8"
-                    android:text="10 mile bike ride (vs 12 miles and it's a 2 loop course making it very spectator friendly!)."
+                    android:text="@string/try_a_tri_bike_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -150,7 +150,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="8"
-                    android:text="A flat 2 mile run (vs 3 mile sprint course)."
+                    android:text="@string/try_a_tri_run_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>

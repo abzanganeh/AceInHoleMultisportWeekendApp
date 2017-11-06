@@ -93,10 +93,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="8"
-                    android:text="(13.1-miles): Half-Marathon event starts and finishes in the Athletes Village to
-                    the cheers of the enthusiastic crowd. Once finished, runners can enjoy the finish line festivities,
-                     including the Sports and Fitness Expo and live entertainment. Post-race refreshments will be provided
-                     and the Awards Ceremony for the Half-Marathon will begin once the results have been certified"
+                    android:text="@string/half_marathon_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
             </LinearLayout>

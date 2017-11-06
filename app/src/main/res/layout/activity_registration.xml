@@ -203,30 +203,153 @@
                 android:text="@string/send_request" />
 
         </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/note_context"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/registration_context"
-            android:layout_marginLeft="@dimen/mid_snd_dp"
-            android:layout_marginRight="@dimen/mid_snd_dp"
             android:layout_marginTop="@dimen/min_dp"
-            android:background="@drawable/round_solid_white_background">
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/banner_four" />
 
-            <TextView
-                android:id="@+id/note_title"
-                android:layout_width="wrap_content"
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView">
+
+            <RelativeLayout
+                android:id="@+id/note_context"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="@dimen/min_dp"
+                android:layout_below="@+id/registration_context"
+                android:layout_marginLeft="@dimen/mid_snd_dp"
+                android:layout_marginRight="@dimen/mid_snd_dp"
                 android:layout_marginTop="@dimen/min_dp"
-                android:text="@string/note_text"
-                android:textColor="@color/colorBlack"
-                android:textSize="18sp" />
+                android:background="@drawable/round_solid_white_background"
+                android:paddingBottom="@dimen/mid_dp">
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/note_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/min_dp"
+                    android:layout_marginTop="@dimen/min_dp"
+                    android:text="@string/note_text"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/cost_include_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/note_title"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_cost_include"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/mid_dp"
+                        android:layout_marginTop="@dimen/min_dp"
+                        android:text="Cost Includes: "
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/content_cost_include_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/min_dp"
+                        android:text="Food and Beer "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/content_cost_include_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/min_dp"
+                        android:text="Access to the weekendís live entertainment and Fitness Expo"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/content_cost_include_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/min_dp"
+                        android:text="Commemorative Finisher medal"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/content_cost_include_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/min_dp"
+                        android:text="Accurate Chip Timing for competitive races"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/content_cost_include_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/min_dp"
+                        android:text="Ace in the Hole MultiSport Weekend Tech Shirt"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/content_cost_include_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/min_dp"
+                        android:text="Post-event party and entertainment"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/content_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/min_dp"
+                        android:text="NOTE: Tech shirts guaranteed to pre-registered participants only. "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/packet_pickup_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/mid_dp"
+                        android:layout_marginTop="@dimen/min_dp"
+                        android:text="PACKET PICK UP"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/packet_pickup_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/min_dp"
+                        android:layout_marginStart="@dimen/min_dp"
+                        android:text="All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR. Packet pick up hours: Thursday 8-5, Friday 9-noon. No day of event packet pick up."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+
 
     </RelativeLayout>
 
