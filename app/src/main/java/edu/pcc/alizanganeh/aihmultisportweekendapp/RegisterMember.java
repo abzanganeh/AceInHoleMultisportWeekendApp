@@ -1,5 +1,7 @@
 package edu.pcc.alizanganeh.aihmultisportweekendapp;
 
+import java.util.ArrayList;
+
 /**
  * Created by ABZanganeh on 11/2/17.
  */
@@ -12,19 +14,19 @@ public class RegisterMember {
     String phonNumber;
     String emergencyName;
     String emergencyNumber;
-//    Event event;
+    ArrayList<String> events;
 
 
     public RegisterMember(String firstName, String lastNamae, String email
-            , String phonNumber, String emergencyName, String emergencyNumber
-           ) {
+            , String phonNumber, String emergencyName, String emergencyNumber, ArrayList<String> events
+    ) {
         this.firstName = firstName;
         this.lastNamae = lastNamae;
         this.email = email;
         this.phonNumber = phonNumber;
         this.emergencyName = emergencyName;
         this.emergencyNumber = emergencyNumber;
-//        this.event = event;
+        this.events = events;
     }
 
     public String getFirstName() {
@@ -51,8 +53,8 @@ public class RegisterMember {
         return emergencyNumber;
     }
 
-//    public Event getEvent() {
-//        return event;
-//    }
+    public ArrayList<String> getEvents() {
+        return events;
+    }
 
 }

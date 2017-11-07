@@ -65,4 +65,5 @@
     <string name="faq_question_3">Can I use a personal music device while running?</string>
     <string name="faq_question_2">Can I use a personal music device while cycling?</string>
     <string name="faq_question_1">What are the Rules?</string>
+    <string name="total">Total Cost:</string>
 </resources>
