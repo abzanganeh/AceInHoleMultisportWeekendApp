@@ -1,6 +1,7 @@
 package edu.pcc.alizanganeh.aihmultisportweekendapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -12,11 +13,15 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,7 +61,7 @@ public class RegistrationActivity extends AppCompatActivity {
     @BindView(R.id.events_check_list) LinearLayout mEventsCheckList;
 //    define a boolean variable to check if volunteer is checked or register
     private boolean witchChecked = true;
-    private ArrayList<String> eventsChosen = new ArrayList<>();
+    private Set<String> eventsChosen = new HashSet<>();
 
 
 
@@ -78,125 +83,93 @@ public class RegistrationActivity extends AppCompatActivity {
         mCommentUserInput.setVisibility(View.INVISIBLE);
 
         onCheckBoxClicked();
+
+        eventsChosen.add("");
+
+        Intent intent = getIntent();
+        String eventSendFromIntent = intent.getStringExtra("event");
+
     }
 
     public int countTotalCost() {
         int total = 0;
         if (mLongCourseCheckBox.isChecked()) {
             total += Constants.LONG_COURSE_COST;
-            if (checkForEvent(eventsChosen, "LongCourse") <0) {
+            if (!(checkForEvent(eventsChosen, "LongCourse").equals("LongCourse"))) {
                 eventsChosen.add("LongCourse");
             }
 
         }else {
 
-            if ( checkForEvent(eventsChosen, "LongCourse") > 0) {
-
-                while(checkForEvent(eventsChosen, "LongCourse")>0){
-                    int index = checkForEvent(eventsChosen, "LongCourse");
-                    eventsChosen.remove(index);
-                }
-//                do {
-//                    int index = checkForEvent(eventsChosen, "LongCourse");
-//                    eventsChosen.remove(index);
-//                }while(checkForEvent(eventsChosen, "LongCourse")>0);
+            if ( checkForEvent(eventsChosen, "LongCourse").equals("LongCourse")) {
+                eventsChosen.remove("LongCourse");
             }
         }
 
         if (mOlympicCheckBox.isChecked()) {
             total += Constants.OLYMPIC_COST;
-            if (checkForEvent(eventsChosen, "Olympic") <0) {
+            if (!(checkForEvent(eventsChosen, "Olympic").equals("Olympic"))) {
                 eventsChosen.add("Olympic");
             }
-        }else {
-            if ( checkForEvent(eventsChosen, "Olympic") > 0) {
 
-                while(checkForEvent(eventsChosen, "Olympic")>0){
-                    int index = checkForEvent(eventsChosen, "Olympic");
-                    eventsChosen.remove(index);
-                }
-//                do {
-//                    int index = checkForEvent(eventsChosen, "Olympic");
-//                    eventsChosen.remove(index);
-//                }while(checkForEvent(eventsChosen, "Olympic")>0);
+        }else {
+
+            if ( checkForEvent(eventsChosen, "Olympic").equals("Olympic")) {
+                eventsChosen.remove("Olympic");
             }
         }
 
         if (mTenKCheckBox.isChecked()) {
             total += Constants.TEN_K_COST;
-            if (checkForEvent(eventsChosen, "10K") <0) {
+            if (!(checkForEvent(eventsChosen, "10K").equals("10K"))) {
                 eventsChosen.add("10K");
             }
-        }else {
-            if ( checkForEvent(eventsChosen, "10K") > 0) {
-                while(checkForEvent(eventsChosen, "10K")>0){
-                    int index = checkForEvent(eventsChosen, "10K");
-                    eventsChosen.remove(index);
-                }
 
-//                do {
-//                    int index = checkForEvent(eventsChosen, "10K");
-//                    eventsChosen.remove(index);
-//                }while(checkForEvent(eventsChosen, "10K")>0);
+        }else {
+
+            if ( checkForEvent(eventsChosen, "10K").equals("10K")) {
+                eventsChosen.remove("10K");
             }
         }
 
         if (mTryATriCheckBox.isChecked()) {
             total += Constants.TRY_A_TRI_COST;
-            if (checkForEvent(eventsChosen, "TryATri") <0) {
+            if (!(checkForEvent(eventsChosen, "TryATri").equals("TryATri"))) {
                 eventsChosen.add("TryATri");
             }
+
         }else {
-            if ( checkForEvent(eventsChosen, "TryATri") > 0) {
-                while(checkForEvent(eventsChosen, "TryATri")>0){
-                    int index = checkForEvent(eventsChosen, "TryATri");
-                    eventsChosen.remove(index);
-                }
-//                do {
-//                    int index = checkForEvent(eventsChosen, "TryATri");
-//                    eventsChosen.remove(index);
-//                }while(checkForEvent(eventsChosen, "TryATri")>0);
+
+            if ( checkForEvent(eventsChosen, "TryATri").equals("TryATri")) {
+                eventsChosen.remove("TryATri");
             }
         }
 
         if (mSprintCheckBox.isChecked()) {
             total += Constants.SPRINT_COST;
-            if (checkForEvent(eventsChosen, "Sprint") <0) {
+            if (!(checkForEvent(eventsChosen, "Sprint").equals("Sprint"))) {
                 eventsChosen.add("Sprint");
             }
-        }else {
-            if ( checkForEvent(eventsChosen, "Sprint") > 0) {
-                while(checkForEvent(eventsChosen, "Sprint")>0){
-                    int index = checkForEvent(eventsChosen, "Sprint");
-                    eventsChosen.remove(index);
-                }
 
-//                do {
-//                    int index = checkForEvent(eventsChosen, "Sprint");
-//                    eventsChosen.remove(index);
-//                }while(checkForEvent(eventsChosen, "Sprint")>0);
+        }else {
+
+            if ( checkForEvent(eventsChosen, "Sprint").equals("Sprint")) {
+                eventsChosen.remove("Sprint");
             }
         }
 
         if (mHalfMarathonCheckBox.isChecked()) {
             total += Constants.HALF_MARATHON_COST;
-            if (checkForEvent(eventsChosen, "HalfMarathon") <0) {
+            if (!(checkForEvent(eventsChosen, "HalfMarathon").equals("HalfMarathon"))) {
                 eventsChosen.add("HalfMarathon");
             }
-        }else {
-            if ( checkForEvent(eventsChosen, "HalfMarathon") > 0) {
-                while(checkForEvent(eventsChosen, "HalfMarathon")>0){
-                    int index = checkForEvent(eventsChosen, "HalfMarathon");
-                    eventsChosen.remove(index);
-                }
 
-//                do {
-//                    int index = checkForEvent(eventsChosen, "HalfMarathon");
-//                    eventsChosen.remove(index);
-//                }while(checkForEvent(eventsChosen, "HalfMarathon")>0);
+        }else {
+
+            if ( checkForEvent(eventsChosen, "HalfMarathon").equals("HalfMarathon")) {
+                eventsChosen.remove("HalfMarathon");
             }
         }
-
         return total;
     }
 
@@ -315,13 +288,15 @@ public class RegistrationActivity extends AppCompatActivity {
             String mPhoneNumber = mPhoneNumberUserInput.getText().toString();
             String mEmergencyName = mEmergencyNameUserInput.getText().toString();
             String mEmergencyNumber = mEmergencyNumberUserInput.getText().toString();
-            ArrayList<String> mEvents = eventsChosen;
+            List<String> setList = new ArrayList<String>(eventsChosen);
+            ArrayList<String> mEvents = (ArrayList<String>) setList;
             RegisterMember mRegister = new RegisterMember(mFirstName, mLastName, mEmail
                     , mPhoneNumber, mEmergencyName, mEmergencyNumber, mEvents);
             DatabaseReference registerRef = FirebaseDatabase
                     .getInstance()
                     .getReference(Constants.FIREBASE_CHILD_REGISTERS);
             registerRef.push().setValue(mRegister);
+            Toast.makeText(RegistrationActivity.this, "The form is Sent to FireBase DB", Toast.LENGTH_LONG).show();
             Log.i("register-------", "sent");
         }
         else {
@@ -345,18 +320,15 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
 
-    /**
-     * method that check for a string in an arraylist and return the index of it or return -1
-     * @return int index of the string or -1
-     */
-    public int checkForEvent(ArrayList<String> events, String event) {
-        int i;
-        for (String e : events) {
-            if (e.equals(event)) {
-                return i = events.indexOf(event);
-            }
-        }
-        return -1;
+
+    public String checkForEvent(Set<String> events, String event) {
+
+            for (String e : events)
+                if (e.equals(event)) {
+                    return event;
+                }
+
+        return "";
     }
 
 }

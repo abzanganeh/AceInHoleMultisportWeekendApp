@@ -23,6 +23,11 @@
 
     </style>
 
+    <style name="MySpinner" parent="@android:drawable/spinner_background">
+        <item name="android:colorBackground">@color/colorRed</item>
+    </style>
+
+
 
 
 </resources>

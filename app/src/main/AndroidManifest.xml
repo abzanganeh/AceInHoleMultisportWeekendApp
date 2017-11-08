@@ -34,7 +34,6 @@
         <activity android:name=".HalfMarathonActivity" />
         <activity android:name=".SprintActivity" />
         <activity android:name=".TryATriActivity" />
-        <activity android:name=".SplashNDashActivity" />
         <activity android:name=".WhatToBringActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".FAQActivity"></activity>

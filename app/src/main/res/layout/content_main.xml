@@ -4,10 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/braden_collum_resized"
+    android:background="@drawable/dimon_blr_309444"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="edu.pcc.alizanganeh.aihmultisportweekendapp.MainActivity"
     tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_dimmer">
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/ace_name"
@@ -41,7 +48,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ace_sndpart_name"
+        android:layout_below="@+id/button"
 
         android:layout_marginTop="@dimen/mid_snd_dp"
         android:orientation="horizontal">
@@ -73,13 +80,26 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/sat_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal"
+                android:text="@string/sat_date"
+                android:textColor="@color/colorRed"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
                 android:id="@+id/long_course"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="@string/long_course"
-                android:textColor="@color/colorRed" />
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/olympic"
@@ -88,7 +108,8 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="@string/olympic"
-                android:textColor="@color/colorRed" />
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/ten_k"
@@ -97,7 +118,8 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="@string/ten_k"
-                android:textColor="@color/colorRed" />
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/half_marathon"
@@ -106,7 +128,8 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="@string/half_marathon"
-                android:textColor="@color/colorRed" />
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -134,13 +157,26 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/sun_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal"
+                android:text="@string/sun_date"
+                android:textColor="@color/colorRed"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
                 android:id="@+id/sprint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="@string/sprint"
-                android:textColor="@color/colorRed" />
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/try_a_tri"
@@ -150,7 +186,8 @@
                 android:gravity="center_horizontal"
                 android:padding="@dimen/min_dp"
                 android:text="@string/try_a_tri"
-                android:textColor="@color/colorRed" />
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/splash_n_dash"
@@ -159,7 +196,8 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="@string/splash_n_dash"
-                android:textColor="@color/colorRed" />
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
@@ -167,7 +205,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout"
+        android:layout_below="@+id/ace_sndpart_name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/mid_snd_dp"
         android:background="@android:drawable/ic_notification_overlay"

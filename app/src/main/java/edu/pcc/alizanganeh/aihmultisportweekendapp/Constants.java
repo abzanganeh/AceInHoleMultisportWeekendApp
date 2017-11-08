@@ -16,4 +16,10 @@ public class Constants {
     public static final int HALF_MARATHON_COST = 75;
     public static final int SPRINT_COST = 90;
     public static final int TRY_A_TRI_COST = 65;
+    public static final String HALF_MARATHON = "HalfMarathon";
+    public static final String LONG_COURSE = "LongCourse";
+    public static final String OLYMPIC = "Olympic";
+    public static final String TRY_A_TRI = "TryATri";
+    public static final String SPRINT = "Sprint";
+    public static final String TEN_K = "10K";
 }

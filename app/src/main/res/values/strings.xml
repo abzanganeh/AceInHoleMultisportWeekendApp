@@ -10,8 +10,10 @@
     <string name="faq">FAQ\'s </string>
     <string name="ace_name">Ace In the Hole</string>
     <string name="ace_sndpart_name">MultiSport Weekend</string>
-    <string name="saturday">Saturday 12/16/2017</string>
-    <string name="sunday">Sunday     12/17/2017</string>
+    <string name="saturday">Saturday</string>
+    <string name="sat_date">12/16/2017</string>
+    <string name="sunday">Sunday</string>
+    <string name="sun_date">12/17/2017</string>
     <string name="long_course">Long Course</string>
     <string name="olympic">Olympic</string>
     <string name="ten_k">10 K</string>

@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         ButterKnife.bind(this);
         Typeface octinFont = Typeface.createFromAsset(getAssets(), "octin_sports_free.ttf");
-        Typeface ostrichFont = Typeface.createFromAsset(getAssets(), "ostrich_regular.ttf");
+//        Typeface ostrichFont = Typeface.createFromAsset(getAssets(), "ostrich_regular.ttf");
         mAceName.setTypeface(octinFont);
         mAceSndpartName.setTypeface(octinFont);
-        mSaturday.setTypeface(ostrichFont);
-        mSunday.setTypeface(ostrichFont);
+//        mSaturday.setTypeface(ostrichFont);
+//        mSunday.setTypeface(ostrichFont);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -132,10 +132,6 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.try_a_tri) {
             Intent intent = new Intent(this, TryATriActivity.class);
-            startActivity(intent);
-
-        } else if (id == R.id.splash_n_dash) {
-            Intent intent = new Intent(this, SplashNDashActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.what_to_bring) {
