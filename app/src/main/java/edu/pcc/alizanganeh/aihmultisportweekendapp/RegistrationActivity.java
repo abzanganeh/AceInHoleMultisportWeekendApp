@@ -311,7 +311,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     .getInstance()
                     .getReference(Constants.FIREBASE_CHILD_VOLUNTEER);
             volunteerRef.push().setValue(mVolunteer);
-            Log.i("volunteer-------", "sent");
+//            Log.i("volunteer-------", "sent");
         }
     }
 
