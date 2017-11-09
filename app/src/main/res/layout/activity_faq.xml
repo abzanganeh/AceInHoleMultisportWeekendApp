@@ -26,7 +26,7 @@
         android:layout_below="@+id/title"
         android:layout_marginTop="@dimen/min_dp"
         android:adjustViewBounds="true"
-        app:srcCompat="@drawable/banner_four" />
+        app:srcCompat="@drawable/banner_one" />
 
     <RelativeLayout
         android:layout_width="match_parent"

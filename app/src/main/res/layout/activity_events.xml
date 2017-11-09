@@ -31,7 +31,7 @@
         android:layout_marginTop="@dimen/min_dp"
         android:adjustViewBounds="true"
         android:paddingEnd="50dp"
-        app:srcCompat="@drawable/banner_four" />
+        app:srcCompat="@drawable/runner_swimmer" />
 
     <Spinner
         android:id="@+id/events_list"

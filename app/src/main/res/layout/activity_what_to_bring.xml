@@ -5,154 +5,167 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="edu.pcc.alizanganeh.aihmultisportweekendapp.ui.WhatToBringActivity">
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/min_dp"
-        android:text="@string/what_to_bring"
-        android:textColor="@color/colorBlack"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/title"
-        android:layout_marginTop="@dimen/min_dp"
-        android:adjustViewBounds="true"
-        app:srcCompat="@drawable/banner_four" />
-
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/imageView"
-        android:background="@color/colorRed">
-
-        <ScrollView
+        android:layout_height="match_parent">
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/mid_snd_dp"
+                android:layout_marginTop="@dimen/mid_snd_dp"
+                android:text="@string/what_to_bring"
+                android:textColor="@color/colorBlack"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="@dimen/min_dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/banner_four" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/min_dp"
-                android:background="@drawable/round_solid_white_background"
-                android:paddingBottom="@dimen/min_dp">
+                android:layout_below="@+id/imageView"
+                android:background="@color/colorRed">
 
-                <LinearLayout
-                    android:id="@+id/cost_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-                    <TextView
-                        android:id="@+id/content_intro"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_margin="@dimen/min_dp"
-                        android:layout_weight="1"
-                        android:text="@string/what_to_bring_intro_text"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="16sp" />
+                        android:background="@drawable/round_solid_white_background"
+                        android:paddingBottom="@dimen/min_dp">
 
-                </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/cost_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/min_dp"
+                            android:orientation="horizontal">
 
-                <LinearLayout
-                    android:id="@+id/swim_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/cost_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/content_intro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/min_dp"
+                                android:layout_weight="1"
+                                android:text="@string/what_to_bring_intro_text"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="16sp" />
 
-                    <TextView
-                        android:id="@+id/title_swim"
-                        android:layout_width="@dimen/fifty_dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="@string/swim"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/content_swim"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/min_dp"
-                        android:layout_weight="7"
-                        android:text="@string/what_to_bring_swim_text"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="16sp" />
-                </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/swim_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cost_content"
+                            android:layout_margin="@dimen/min_dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
 
-                <LinearLayout
-                    android:id="@+id/bike_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/swim_content"
-                    android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/title_swim"
+                                android:layout_width="@dimen/fifty_dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/swim"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/title_bike"
-                        android:layout_width="@dimen/fifty_dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="@string/bike"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/content_swim"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/min_dp"
+                                android:layout_weight="7"
+                                android:text="@string/what_to_bring_swim_text"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="16sp" />
+                        </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/content_bike"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/min_dp"
-                        android:layout_weight="8"
-                        android:text="@string/what_to_bring_bike_text"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="16sp" />
-                </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/bike_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/swim_content"
+                            android:layout_margin="@dimen/min_dp"
+                            android:orientation="horizontal">
 
-                <LinearLayout
-                    android:id="@+id/run_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/bike_content"
-                    android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/title_bike"
+                                android:layout_width="@dimen/fifty_dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/bike"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/title_run"
-                        android:layout_width="@dimen/fifty_dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="@string/run"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/content_bike"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/min_dp"
+                                android:layout_weight="8"
+                                android:text="@string/what_to_bring_bike_text"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="16sp" />
+                        </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/content_run"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_margin="@dimen/min_dp"
-                        android:layout_weight="8"
-                        android:text="@string/what_to_bring_run_text"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="16sp" />
-                </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/run_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/bike_content"
+                            android:layout_margin="@dimen/min_dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/title_run"
+                                android:layout_width="@dimen/fifty_dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/run"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/content_run"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="@dimen/min_dp"
+                                android:layout_weight="8"
+                                android:text="@string/what_to_bring_run_text"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </ScrollView>
 
             </RelativeLayout>
-        </ScrollView>
-
-    </RelativeLayout>
-
+        </RelativeLayout>
+</ScrollView>
 
 </RelativeLayout>

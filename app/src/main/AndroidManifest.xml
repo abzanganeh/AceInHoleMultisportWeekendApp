@@ -24,12 +24,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.MainActivity"></meta-data>
         </activity>
-        <activity android:name=".ui.LongCourseActivity" />
-        <activity android:name=".ui.OlympicActivity" />
-        <activity android:name=".ui.TenKActivity" />
-        <activity android:name=".ui.HalfMarathonActivity" />
-        <activity android:name=".ui.SprintActivity" />
-        <activity android:name=".ui.TryATriActivity" />
         <activity android:name=".ui.WhatToBringActivity" />
         <activity android:name=".ui.RegistrationActivity" />
         <activity android:name=".ui.FAQActivity" />

@@ -1,5 +1,6 @@
 package edu.pcc.alizanganeh.aihmultisportweekendapp.ui;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -16,9 +17,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import org.parceler.Parcels;
+
+import java.util.ArrayList;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import edu.pcc.alizanganeh.aihmultisportweekendapp.R;
+import edu.pcc.alizanganeh.aihmultisportweekendapp.models.Event;
 
 
 public class MainActivity extends AppCompatActivity
@@ -36,6 +42,9 @@ public class MainActivity extends AppCompatActivity
     @BindView(R.id.sprint) TextView mSprint;
     @BindView(R.id.try_a_tri) TextView mTryATri;
 
+    private Activity mContext;
+    final ArrayList<Event> events = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,12 +52,38 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ButterKnife.bind(this);
+        mContext = this;
         Typeface octinFont = Typeface.createFromAsset(getAssets(), "octin_sports_free.ttf");
 //        Typeface ostrichFont = Typeface.createFromAsset(getAssets(), "ostrich_regular.ttf");
         mAceName.setTypeface(octinFont);
         mAceSndpartName.setTypeface(octinFont);
 //        mSaturday.setTypeface(ostrichFont);
 //        mSunday.setTypeface(ostrichFont);
+
+        Event longCourse = new Event( "Long Course", "Sat 7/16/2017","7:00 AM",
+                240, getResources().getString(R.string.long_course_swim_text), getResources().getString(R.string.long_course_bike_text),
+                getResources().getString(R.string.long_course_run_text) );
+        Event olympic = new Event("Olympic", "Sat 7/16/2017","7:30 AM", 110,
+                getResources().getString(R.string.olympic_swim_text), getResources().getString(R.string.olympic_bike_text),
+                getResources().getString(R.string.olympic_run_text) );
+        Event tenK = new Event("10K", "Sat 7/16/2017","7:15 AM", 50,
+                "", "",
+                getResources().getString(R.string.tenk_k_run_text) );
+        Event halfMarathon = new Event("Half Marathon", "Sat 7/16/2017","7:15 AM", 75, "", "",
+                getResources().getString(R.string.half_marathon_text) );
+        Event sprint = new Event("Sprint", "Sun 7/17/2017","8:00 AM", 90,
+                getResources().getString(R.string.sprint_swim_text), getResources().getString(R.string.sprint_bike_text),
+                getResources().getString(R.string.sprint_run_text) );
+        Event tryATri = new Event("Try-a-Tri", "Sun 7/17/2017","8:20 AM", 65,
+                getResources().getString(R.string.try_a_tri_swim_text), getResources().getString(R.string.try_a_tri_bike_text),
+                getResources().getString(R.string.try_a_tri_run_text));
+
+        events.add(longCourse);
+        events.add(olympic);
+        events.add(tenK);
+        events.add(halfMarathon);
+        events.add(sprint);
+        events.add(tryATri);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -113,27 +148,45 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.long_course) {
-            Intent intent = new Intent(this, LongCourseActivity.class);
-            startActivity(intent);
+            int itemPosition = 0;
+            Intent intent = new Intent(MainActivity.this, EventViewHolderActivity.class);
+            intent.putExtra("position", itemPosition);
+            intent.putExtra("events", Parcels.wrap(events));
+            mContext.startActivity(intent);
+
         } else if (id == R.id.olympic) {
-            Intent intent = new Intent(this, OlympicActivity.class);
-            startActivity(intent);
+            int itemPosition = 1;
+            Intent intent = new Intent(MainActivity.this, EventViewHolderActivity.class);
+            intent.putExtra("position", itemPosition);
+            intent.putExtra("events", Parcels.wrap(events));
+            mContext.startActivity(intent);
 
         } else if (id == R.id.ten_k) {
-            Intent intent = new Intent(this, TenKActivity.class);
-            startActivity(intent);
-
+            int itemPosition = 2;
+            Intent intent = new Intent(MainActivity.this, EventViewHolderActivity.class);
+            intent.putExtra("position", itemPosition);
+            intent.putExtra("events", Parcels.wrap(events));
+            mContext.startActivity(intent);
         } else if (id == R.id.half_marathon) {
-            Intent intent = new Intent(this, HalfMarathonActivity.class);
-            startActivity(intent);
+            int itemPosition = 3;
+            Intent intent = new Intent(MainActivity.this, EventViewHolderActivity.class);
+            intent.putExtra("position", itemPosition);
+            intent.putExtra("events", Parcels.wrap(events));
+            mContext.startActivity(intent);
 
         } else if (id == R.id.sprint) {
-            Intent intent = new Intent(this, SprintActivity.class);
-            startActivity(intent);
+            int itemPosition = 4;
+            Intent intent = new Intent(MainActivity.this, EventViewHolderActivity.class);
+            intent.putExtra("position", itemPosition);
+            intent.putExtra("events", Parcels.wrap(events));
+            mContext.startActivity(intent);
 
         } else if (id == R.id.try_a_tri) {
-            Intent intent = new Intent(this, TryATriActivity.class);
-            startActivity(intent);
+            int itemPosition = 5;
+            Intent intent = new Intent(MainActivity.this, EventViewHolderActivity.class);
+            intent.putExtra("position", itemPosition);
+            intent.putExtra("events", Parcels.wrap(events));
+            mContext.startActivity(intent);
 
         } else if (id == R.id.what_to_bring) {
             Intent intent = new Intent(this, WhatToBringActivity.class);
