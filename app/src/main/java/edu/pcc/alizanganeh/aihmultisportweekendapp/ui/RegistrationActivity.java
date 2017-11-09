@@ -1,4 +1,4 @@
-package edu.pcc.alizanganeh.aihmultisportweekendapp;
+package edu.pcc.alizanganeh.aihmultisportweekendapp.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -25,6 +25,10 @@ import java.util.Set;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import edu.pcc.alizanganeh.aihmultisportweekendapp.utils.Constants;
+import edu.pcc.alizanganeh.aihmultisportweekendapp.R;
+import edu.pcc.alizanganeh.aihmultisportweekendapp.models.RegisterMember;
+import edu.pcc.alizanganeh.aihmultisportweekendapp.models.VolunteerMember;
 
 public class RegistrationActivity extends AppCompatActivity {
     private DatabaseReference mRegisterFirstNameReference;
@@ -311,7 +315,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     .getInstance()
                     .getReference(Constants.FIREBASE_CHILD_VOLUNTEER);
             volunteerRef.push().setValue(mVolunteer);
-//            Log.i("volunteer-------", "sent");
+            Log.i("volunteer-------", "sent");
         }
     }
 

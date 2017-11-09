@@ -1,21 +1,24 @@
-package edu.pcc.alizanganeh.aihmultisportweekendapp;
+package edu.pcc.alizanganeh.aihmultisportweekendapp.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class TenKActivity extends AppCompatActivity {
+import edu.pcc.alizanganeh.aihmultisportweekendapp.utils.Constants;
+import edu.pcc.alizanganeh.aihmultisportweekendapp.R;
+
+public class OlympicActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ten_k);
+        setContentView(R.layout.activity_olympic);
     }
 
     public void onClickRegistration(View view) {
         Intent intent = new Intent(this, RegistrationActivity.class);
-        intent.putExtra("event",Constants.TEN_K);
+        intent.putExtra("event", Constants.OLYMPIC);
         startActivity(intent);
 
     }

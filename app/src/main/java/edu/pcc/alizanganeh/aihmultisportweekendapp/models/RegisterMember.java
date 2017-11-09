@@ -1,4 +1,4 @@
-package edu.pcc.alizanganeh.aihmultisportweekendapp;
+package edu.pcc.alizanganeh.aihmultisportweekendapp.models;
 
 import java.util.ArrayList;
 

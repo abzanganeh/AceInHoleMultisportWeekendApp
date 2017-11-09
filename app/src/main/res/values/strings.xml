@@ -48,11 +48,11 @@
     <string name="olympic_swim_text">1,500 meters - Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.</string>
     <string name="olympic_bike_text">28mi - A scenic point-to-point course that travels over gently rolling hills. The bike course will be marked with large directional signage and course marshals will be present at key intersections.</string>
     <string name="olympic_run_text">10K - A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (one hill total with a minimal elevation gain).</string>
-    <string name="sprint_swim_text">Course will offer a 1-loop 1/2 mile swim</string>
+    <string name="sprint_swim_text">Course will offer a 1-loop &#189; mile swim</string>
     <string name="sprint_bike_text">Course will offer a the exact same 28 mile Bike Course as the Olympic distance</string>
     <string name="sprint_run_text">Course will offer a a 5km run.</string>
     <string name="tenk_k_run_text">The 10K event starts and finishes in the Athletes Village. The paths are approximately 6 ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.</string>
-    <string name="try_a_tri_swim_text">This novice race is designed for the first time triathlete, those new to the sport, our Junior Triathletes. The swim is a shorter, more manageable 1/4 mile distance, (instead of the standard 1/2-mile Sprint distance swim).</string>
+    <string name="try_a_tri_swim_text">This novice race is designed for the first time triathlete, those new to the sport, our Junior Triathletes. The swim is a shorter, more manageable &#188; mile distance, (instead of the standard &#189;-mile Sprint distance swim).</string>
     <string name="try_a_tri_bike_text">10 mile bike ride (vs 12 miles and it\'s a 2 loop course making it very spectator friendly!).</string>
     <string name="try_a_tri_run_text">A flat 2 mile run (vs 3 mile sprint course).</string>
     <string name="what_to_bring_intro_text">Watch the weather closely. The show goes on no matter what the weather is doing. You must wear your chip timing piece during the entire event. You will be given a band that will hold your chip timing piece around your ankle throughout the entire event. Be sure that it is snapped tightly. Be sure to have your Chip Timing piece on before you start the race and be sure to step over the timing mats after each segment of the race. If you are wearing a wet-suit, make sure the timing piece goes under your wetsuit otherwise, you will have a very difficult time getting off your wet suit.</string>
@@ -68,4 +68,8 @@
     <string name="faq_question_2">Can I use a personal music device while cycling?</string>
     <string name="faq_question_1">What are the Rules?</string>
     <string name="total">Total Cost:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_title">Event Date:</string>
 </resources>

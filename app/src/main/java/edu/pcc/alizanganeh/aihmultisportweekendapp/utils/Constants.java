@@ -1,4 +1,4 @@
-package edu.pcc.alizanganeh.aihmultisportweekendapp;
+package edu.pcc.alizanganeh.aihmultisportweekendapp.utils;
 
 /**
  * Created by ABZanganeh on 11/2/17.
@@ -22,4 +22,5 @@ public class Constants {
     public static final String TRY_A_TRI = "TryATri";
     public static final String SPRINT = "Sprint";
     public static final String TEN_K = "10K";
+
 }

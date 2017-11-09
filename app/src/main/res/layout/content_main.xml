@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/dimon_blr_309444"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="edu.pcc.alizanganeh.aihmultisportweekendapp.MainActivity"
+    tools:context="edu.pcc.alizanganeh.aihmultisportweekendapp.ui.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
     <RelativeLayout

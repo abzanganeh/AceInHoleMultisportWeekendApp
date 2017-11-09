@@ -1,4 +1,4 @@
-package edu.pcc.alizanganeh.aihmultisportweekendapp;
+package edu.pcc.alizanganeh.aihmultisportweekendapp.models;
 
 /**
  * Created by ABZanganeh on 11/2/17.

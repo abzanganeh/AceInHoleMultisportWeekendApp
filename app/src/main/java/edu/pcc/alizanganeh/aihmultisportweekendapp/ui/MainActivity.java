@@ -1,4 +1,4 @@
-package edu.pcc.alizanganeh.aihmultisportweekendapp;
+package edu.pcc.alizanganeh.aihmultisportweekendapp.ui;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import edu.pcc.alizanganeh.aihmultisportweekendapp.R;
 
 
 public class MainActivity extends AppCompatActivity
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void clickBeginEvents( View view) {
-        Intent intent = new Intent(this, EventsActivity.class);
+        Intent intent = new Intent(this, FirstPageActivity.class);
         startActivity(intent);
     }
 

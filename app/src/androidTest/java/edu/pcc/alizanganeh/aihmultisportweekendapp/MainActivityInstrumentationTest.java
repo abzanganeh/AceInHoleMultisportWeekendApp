@@ -4,6 +4,8 @@ import android.support.test.rule.ActivityTestRule;
 
 import org.junit.Rule;
 
+import edu.pcc.alizanganeh.aihmultisportweekendapp.ui.MainActivity;
+
 /**
  * Created by ABZanganeh on 10/18/17.
  */
