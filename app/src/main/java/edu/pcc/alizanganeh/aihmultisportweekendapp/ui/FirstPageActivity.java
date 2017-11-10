@@ -33,7 +33,7 @@ public class FirstPageActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_events);
+        setContentView(R.layout.activity_first_page);
         ButterKnife.bind(this);
         mContext = this;
 
@@ -96,9 +96,6 @@ public class FirstPageActivity extends AppCompatActivity{
 
         });
 
-//        Intent intent = getIntent();
-//        String event = intent.getStringExtra("event");
-//        mTitleEvent.setText(event);
     }
 
     public void onClickWhatToBring(View view){
@@ -117,7 +114,7 @@ public class FirstPageActivity extends AppCompatActivity{
     }
 
     public void onClickThingsToKnow(View view){
-        Intent intent = new Intent(this, EventViewHolderActivity.class);
+        Intent intent = new Intent(this, MoreInfoActivity.class);
         startActivity(intent);
     }
 

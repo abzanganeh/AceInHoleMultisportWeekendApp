@@ -24,7 +24,7 @@
     <string name="begin">Let the Fun Begins</string>
     <string name="title_events">Choose one you are interested:</string>
     <string name="things_to_know">Thing You May Want to Know</string>
-    <string name="form_text">Plerase choose</string>
+    <string name="form_text">Please choose</string>
     <string name="register">Register</string>
     <string name="volunteer">Volunteer</string>
     <string name="first_name">First Name:</string>
@@ -59,7 +59,7 @@
     <string name="what_to_bring_swim_text">Wetsuits are optional for the swim but will provide buoyancy and warmth. However, many people opt for no wetsuit for a triathlon so no worries. We will provide you with a swim cap but you will want to bring your own goggles.</string>
     <string name="what_to_bring_bike_text">A biking helmet is mandatory. You will also receive 2 stickers in your package with your race number on them. The small sticker should go on the front of your helmet. The bigger sticker will wrap around your bike frame. Road or mountain bikes are acceptable. For safety reasons, be sure to have end-caps on the end of your handle-bars.</string>
     <string name="what_to_bring_run_text">You must finish the race with your bib number on the front of you. Some people choose to pin it on at the beginning of the race and have it on for the whole event so they donít have to worry about it. Others pin it on a singlet that they put on once they finish the swim before they head out for the bike. Others use an elastic racing strap that they pin their bib number to and then quickly strap it on before they leave for the run. Use whatever option feels best for you. Remember to bring a change of clothing so you can enjoy the post-event festivities.</string>
-    <string name="faq_answer_1"><![CDATA[We currently adhere to the USAT Rules for Triathlon & Duathlon. Important rules include no drafting, you must wear a helmet and music is ABSOLUTELY NOT allowed during the bike for obvious safety reasons.]]></string>
+    <string name="faq_answer_1">We currently adhere to the USAT Rules for Triathlon &amp; Duathlon. Important rules include no drafting, you must wear a helmet and music is ABSOLUTELY NOT allowed during the bike for obvious safety reasons.</string>
     <string name="faq_answer_2">Absolutely no music devices are allowed during the bike segment for obvious safety risks and will result in immediate disqualification.</string>
     <string name="faq_answer_3">During any running segments, we prefer for athletes to NOT use music devices to maximize safety, assure a fair competitive environment and assure athletes can hear all course marshal instructions. With that said, we also understand that many athletes rely on music to help endure the challenge of running. To accommodate the needs of our athletes while still assuring maximum safety and a fair, competitive environment, here is the arrangement that we can accommodate. If you chose to use a personal music device, you must always keep one ear open for instructions so only one ear-bud can be used at any time. In addition, if you opt to use music, you will not be eligible for awards, points and rankings. So as an athlete, you have to make a choiceÖmusic or awards/points/rankings. If you are using a personal music devise with two earbuds, you will be immediately disqualified. Trust us, we donít want to have to enforce a disqualification but in order to assure the safety of all athletes, this is a very important rule. We also request that if you chose to use a personal music device that you keep the volume to a minimum to assure all instructions can be heard.</string>
     <string name="faq_answer_4">No, you do not need to wear a wetsuit. Many will not wear a wetsuit while others will choose to wear a wetsuit because of the buoyancy and warmth factor. Do I have to use a road or racing bike? No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</string>
@@ -68,8 +68,17 @@
     <string name="faq_question_2">Can I use a personal music device while cycling?</string>
     <string name="faq_question_1">What are the Rules?</string>
     <string name="total">Total Cost:</string>
+    <string name="note_context">Tech shirts guaranteed to pre-registered participants only.</string>
+    <string name="packet_pickup">PACKET PICK UP</string>
+    <string name="packet_pickup_text">All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR. \nPacket pick up hours: \n\u25BA Thursday 8&#8211;5 \n\u25BA Friday 9&#8211;noon\nNo day of event packet pick up. </string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="date_title">Event Date:</string>
+    <string name="more_info">More Information</string>
+    <string name="about_event_title">ABOUT THE EVENT</string>
+    <string name="about_event_text">The Annual Ace in the Hole MultiSport Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation.   There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and H, but make sure you come to have fun!</string>
+    <string name="cost_include">Cost Includes:</string>
+    <string name="cost_include_text"> \u25CF Food &amp; Beer\n\u25CF Access to the weekendís live entertainment &amp; Fitness Expo \n\u25CF Commemorative Finisher medal \n\u25CF Accurate Chip Timing for competitive races \n\u25CF Ace in the Hole MultiSport Weekend Tech Shirt \n\u25CF Post-event party &amp; entertainment></string>
+    <string name="banner_6_description">A photo show three persons, one rumming, one swimming, one biking</string>
 </resources>

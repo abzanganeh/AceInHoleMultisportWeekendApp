@@ -300,7 +300,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     .getInstance()
                     .getReference(Constants.FIREBASE_CHILD_REGISTERS);
             registerRef.push().setValue(mRegister);
-            Toast.makeText(RegistrationActivity.this, "The form is Sent to FireBase DB", Toast.LENGTH_LONG).show();
+            Toast.makeText(RegistrationActivity.this, "The registeration form is Sent to FireBase DB", Toast.LENGTH_LONG).show();
             Log.i("register-------", "sent");
         }
         else {
@@ -315,6 +315,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     .getInstance()
                     .getReference(Constants.FIREBASE_CHILD_VOLUNTEER);
             volunteerRef.push().setValue(mVolunteer);
+            Toast.makeText(RegistrationActivity.this, "The volunteer form is Sent to FireBase DB", Toast.LENGTH_LONG).show();
             Log.i("volunteer-------", "sent");
         }
     }

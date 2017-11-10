@@ -35,7 +35,7 @@
                 android:layout_below="@+id/title"
                 android:layout_marginTop="@dimen/min_dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/banner_three" />
+                android:src="@drawable/runner_swimmer" />
 
 
             <ScrollView

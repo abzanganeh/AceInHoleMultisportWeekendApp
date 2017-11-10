@@ -31,7 +31,7 @@
         android:layout_marginTop="@dimen/min_dp"
         android:adjustViewBounds="true"
         android:paddingEnd="50dp"
-        app:srcCompat="@drawable/runner_swimmer" />
+        app:srcCompat="@drawable/banner5" />
 
     <Spinner
         android:id="@+id/events_list"
@@ -93,7 +93,7 @@
         android:layout_marginTop="@dimen/mid_dp"
         android:background="@drawable/round_red_background"
         android:onClick="onClickThingsToKnow"
-        android:text="@string/things_to_know"
+        android:text="@string/more_info"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
         android:textStyle="bold" />

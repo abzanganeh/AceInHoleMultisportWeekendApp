@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ButterKnife.bind(this);
+
         mContext = this;
         Typeface octinFont = Typeface.createFromAsset(getAssets(), "octin_sports_free.ttf");
 //        Typeface ostrichFont = Typeface.createFromAsset(getAssets(), "ostrich_regular.ttf");
