@@ -7,7 +7,7 @@
     <string name="action_settings">Settings</string>
     <string name="registration">Registration </string>
     <string name="what_to_bring">What to Bring? </string>
-    <string name="faq">FAQ\'s </string>
+    <string name="faq">FAQs </string>
     <string name="ace_name">Ace In the Hole</string>
     <string name="ace_sndpart_name">MultiSport Weekend</string>
     <string name="saturday">Saturday</string>
@@ -21,7 +21,7 @@
     <string name="sprint">Sprint</string>
     <string name="try_a_tri">Try-a-Tri</string>
     <string name="splash_n_dash">Splash n Dash</string>
-    <string name="begin">Let the Fun Begins</string>
+    <string name="begin">Let the Fun Begin</string>
     <string name="title_events">Choose one you are interested:</string>
     <string name="things_to_know">Thing You May Want to Know</string>
     <string name="form_text">Please choose</string>
