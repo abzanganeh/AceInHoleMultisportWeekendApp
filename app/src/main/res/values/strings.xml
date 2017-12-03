@@ -81,4 +81,8 @@
     <string name="cost_include">Cost Includes:</string>
     <string name="cost_include_text"> \u25CF Food &amp; Beer\n\u25CF Access to the weekendís live entertainment &amp; Fitness Expo \n\u25CF Commemorative Finisher medal \n\u25CF Accurate Chip Timing for competitive races \n\u25CF Ace in the Hole MultiSport Weekend Tech Shirt \n\u25CF Post-event party &amp; entertainment></string>
     <string name="banner_6_description">A photo show three persons, one rumming, one swimming, one biking</string>
+    <string name="which_day">For Which Day?</string>
+    <string name="saturday_events">Saturday 12/16/2017:</string>
+    <string name="sunday_events">Sunday 12/17/2017:</string>
+    <string name="reset">Reset</string>
 </resources>

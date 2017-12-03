@@ -72,7 +72,6 @@
                         android:id="@+id/register"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/form_text"
                         android:layout_weight="1"
                         android:button="@android:drawable/btn_radio"
                         android:checked="true"
@@ -87,10 +86,10 @@
                         android:button="@android:drawable/btn_radio"
                         android:onClick="onRadioButtonClicked"
                         android:text="@string/volunteer" />
+
                 </RadioGroup>
 
             </LinearLayout>
-
 
             <LinearLayout
                 android:id="@+id/events_check_list"
@@ -107,6 +106,17 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
+                    <TextView
+                        android:id="@+id/saturday_events"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:background="@color/colorWhite"
+                        android:paddingStart="@dimen/min_dp"
+                        android:text="@string/saturday_events"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+
                     <LinearLayout
                         android:id="@+id/long_course_list"
                         android:layout_width="wrap_content"
@@ -122,6 +132,7 @@
 
                         <TextView
 
+                            android:id="@+id/long_course_dollar_sign"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/min_dp"
@@ -150,6 +161,7 @@
 
                         <TextView
 
+                            android:id="@+id/olympic_dollar_sign"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/min_dp"
@@ -180,6 +192,7 @@
 
                         <TextView
 
+                            android:id="@+id/ten_k_dollar_sign"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/min_dp"
@@ -192,16 +205,6 @@
                             android:text="50" />
 
                     </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/events_check_list_half_two"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
 
                     <LinearLayout
                         android:id="@+id/half_marathon_list"
@@ -222,6 +225,7 @@
 
                         <TextView
 
+                            android:id="@+id/half_marathon_dollar_sign"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/min_dp"
@@ -234,6 +238,27 @@
                             android:text="75" />
 
                     </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/events_check_list_half_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sunday_events"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:background="@color/colorWhite"
+                        android:text="@string/sunday_events"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
 
                     <LinearLayout
                         android:id="@+id/sprint_list"
@@ -250,6 +275,7 @@
 
                         <TextView
 
+                            android:id="@+id/sprint_dollar_sign"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/min_dp"
@@ -278,6 +304,7 @@
 
                         <TextView
 
+                            android:id="@+id/try_a_tri_dollar_sign"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/min_dp"
@@ -337,6 +364,15 @@
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/min_dp"
+                    android:background="@drawable/round_red_background"
+                    android:onClick="reset"
+                    android:text="@string/reset" />
 
 
             </LinearLayout>

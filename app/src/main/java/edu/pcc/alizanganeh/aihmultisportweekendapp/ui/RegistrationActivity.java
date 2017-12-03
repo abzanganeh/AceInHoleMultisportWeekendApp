@@ -35,7 +35,6 @@ public class RegistrationActivity extends AppCompatActivity {
 
     @BindView(R.id.radioGroup) RadioGroup mRadioGroup;
     @BindView(R.id.register) RadioButton mRegister;
-    @BindView(R.id.volunteer) RadioButton mVolunteer;
     @BindView(R.id.comment_user_input) EditText mCommentUserInput;
     @BindView(R.id.comment_text) TextView mCommentText;
     @BindView(R.id.emergency_context) LinearLayout mEmergencyContext;
@@ -49,16 +48,22 @@ public class RegistrationActivity extends AppCompatActivity {
     @BindView(R.id.email_user_input) EditText mEmailUserInput;
     @BindView(R.id.long_course_checkBox) CheckBox mLongCourseCheckBox;
     @BindView(R.id.long_course_cost) TextView mLongCourseCost;
+    @BindView(R.id.long_course_dollar_sign) TextView mLongCourseDollarSign;
     @BindView(R.id.olympic_checkBox) CheckBox mOlympicCheckBox;
     @BindView(R.id.olympic_cost) TextView mOlympicCost;
+    @BindView(R.id.olympic_dollar_sign) TextView mOlympicDollarSign;
     @BindView(R.id.sprint_checkBox) CheckBox mSprintCheckBox;
     @BindView(R.id.sprint_cost) TextView mSprintCost;
+    @BindView(R.id.sprint_dollar_sign) TextView mSprintDollarSign;
     @BindView(R.id.try_a_tri_checkBox) CheckBox mTryATriCheckBox;
     @BindView(R.id.try_a_tri_cost) TextView mTryATriCost;
+    @BindView(R.id.try_a_tri_dollar_sign) TextView mTryATriDollarSign;
     @BindView(R.id.half_marathon_checkBox) CheckBox mHalfMarathonCheckBox;
     @BindView(R.id.half_marathon_cost) TextView mHalfMarathonCost;
+    @BindView(R.id.half_marathon_dollar_sign) TextView mHalfMarathonDollarSign;
     @BindView(R.id.ten_k_checkBox) CheckBox mTenKCheckBox;
     @BindView(R.id.ten_k_cost) TextView mTenKCost;
+    @BindView(R.id.ten_k_dollar_sign) TextView mTenKDollarSign;
     @BindView(R.id.total_cost_text) TextView mTotalCostText;
     @BindView(R.id.total_cost) LinearLayout mTotalCost;
     @BindView(R.id.events_chosen) TextView mEventsChosen;
@@ -186,6 +191,16 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mTotalCostText.setText(String.valueOf(countTotalCost()));
                 mEventsChosen.setText(eventsChosen.toString());
+                mOlympicCheckBox.setVisibility(View.INVISIBLE);
+                mOlympicCost.setVisibility(View.INVISIBLE);
+                mOlympicDollarSign.setVisibility(View.INVISIBLE);
+                mTenKCheckBox.setVisibility(View.INVISIBLE);
+                mTenKCost.setVisibility(View.INVISIBLE);
+                mTenKDollarSign.setVisibility(View.INVISIBLE);
+                mHalfMarathonCheckBox.setVisibility(View.INVISIBLE);
+                mHalfMarathonCost.setVisibility(View.INVISIBLE);
+                mHalfMarathonDollarSign.setVisibility(View.INVISIBLE);
+
             }
         });
 
@@ -195,6 +210,15 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mTotalCostText.setText(String.valueOf(countTotalCost()));
                 mEventsChosen.setText(eventsChosen.toString());
+                mLongCourseCheckBox.setVisibility(View.INVISIBLE);
+                mLongCourseCost.setVisibility(View.INVISIBLE);
+                mLongCourseDollarSign.setVisibility(View.INVISIBLE);
+                mTenKCheckBox.setVisibility(View.INVISIBLE);
+                mTenKCost.setVisibility(View.INVISIBLE);
+                mTenKDollarSign.setVisibility(View.INVISIBLE);
+                mHalfMarathonCheckBox.setVisibility(View.INVISIBLE);
+                mHalfMarathonCost.setVisibility(View.INVISIBLE);
+                mHalfMarathonDollarSign.setVisibility(View.INVISIBLE);
         }
         });
 
@@ -204,6 +228,15 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mTotalCostText.setText(String.valueOf(countTotalCost()));
                 mEventsChosen.setText(eventsChosen.toString());
+                mLongCourseCheckBox.setVisibility(View.INVISIBLE);
+                mLongCourseCost.setVisibility(View.INVISIBLE);
+                mLongCourseDollarSign.setVisibility(View.INVISIBLE);
+                mOlympicCheckBox.setVisibility(View.INVISIBLE);
+                mOlympicCost.setVisibility(View.INVISIBLE);
+                mOlympicDollarSign.setVisibility(View.INVISIBLE);
+                mHalfMarathonCheckBox.setVisibility(View.INVISIBLE);
+                mHalfMarathonCost.setVisibility(View.INVISIBLE);
+                mHalfMarathonDollarSign.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -213,6 +246,10 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mTotalCostText.setText(String.valueOf(countTotalCost()));
                 mEventsChosen.setText(eventsChosen.toString());
+                mSprintCheckBox.setVisibility(View.INVISIBLE);
+                mSprintCost.setVisibility(View.INVISIBLE);
+                mSprintDollarSign.setVisibility(View.INVISIBLE);
+
             }
         });
 
@@ -222,6 +259,10 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mTotalCostText.setText(String.valueOf(countTotalCost()));
                 mEventsChosen.setText(eventsChosen.toString());
+                mTryATriCheckBox.setVisibility(View.INVISIBLE);
+                mTryATriCost.setVisibility(View.INVISIBLE);
+                mTryATriDollarSign.setVisibility(View.INVISIBLE);
+
             }
         });
 
@@ -231,6 +272,15 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mTotalCostText.setText(String.valueOf(countTotalCost()));
                 mEventsChosen.setText(eventsChosen.toString());
+                mLongCourseCheckBox.setVisibility(View.INVISIBLE);
+                mLongCourseCost.setVisibility(View.INVISIBLE);
+                mLongCourseDollarSign.setVisibility(View.INVISIBLE);
+                mOlympicCheckBox.setVisibility(View.INVISIBLE);
+                mOlympicCost.setVisibility(View.INVISIBLE);
+                mOlympicDollarSign.setVisibility(View.INVISIBLE);
+                mTenKCheckBox.setVisibility(View.INVISIBLE);
+                mTenKCost.setVisibility(View.INVISIBLE);
+                mTenKDollarSign.setVisibility(View.INVISIBLE);
             }
         });
     }
@@ -254,7 +304,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     mTotalCost.setVisibility(View.VISIBLE);
                     mEventsChosen.setVisibility(View.VISIBLE);
                     String reg_firstname = mFirstNameUserInput.getText().toString();
-                    saveFirstnameToFirebase(reg_firstname);
+
 
                     RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) mNameContext.getLayoutParams();
                     params.addRule(RelativeLayout.BELOW, R.id.events_chosen);
@@ -285,23 +335,42 @@ public class RegistrationActivity extends AppCompatActivity {
     public void onSendRequestClicked (View view){
         Log.d("send request", " button clicked");
         if (witchChecked) {
+            if( mFirstNameUserInput.getText().toString().trim().equals("")) {
+                mFirstNameUserInput.setError("First name is required!");
+            }
+            else if( mLastNameUserInput.getText().toString().trim().equals("")) {
+                mLastNameUserInput.setError("Last name is required!");
+            }
+            else if (mEmailUserInput.getText().toString().trim().equals("")) {
+                mEmailUserInput.setError("Email is required!");
+            }
+            else if (mPhoneNumberUserInput.getText().toString().trim().equals("")) {
+                mPhoneNumberUserInput.setError("Phone Number is required!");
+            }
+            else if (mEmergencyNameUserInput.getText().toString().trim().equals("")) {
+                mEmergencyNameUserInput.setError("Emergency User Name is required!");
+            }
+            else if (mEmergencyNumberUserInput.getText().toString().trim().equals("")) {
+                mEmergencyNumberUserInput.setError("Emergency Number is required!");
+            } else {
+                String mFirstName = mFirstNameUserInput.getText().toString();
+                String mLastName = mLastNameUserInput.getText().toString();
+                String mEmail = mEmailUserInput.getText().toString();
+                String mPhoneNumber = mPhoneNumberUserInput.getText().toString();
+                String mEmergencyName = mEmergencyNameUserInput.getText().toString();
+                String mEmergencyNumber = mEmergencyNumberUserInput.getText().toString();
+                List<String> setList = new ArrayList<String>(eventsChosen);
 
-            String mFirstName = mFirstNameUserInput.getText().toString();
-            String mLastName = mLastNameUserInput.getText().toString();
-            String mEmail = mEmailUserInput.getText().toString();
-            String mPhoneNumber = mPhoneNumberUserInput.getText().toString();
-            String mEmergencyName = mEmergencyNameUserInput.getText().toString();
-            String mEmergencyNumber = mEmergencyNumberUserInput.getText().toString();
-            List<String> setList = new ArrayList<String>(eventsChosen);
-            ArrayList<String> mEvents = (ArrayList<String>) setList;
-            RegisterMember mRegister = new RegisterMember(mFirstName, mLastName, mEmail
-                    , mPhoneNumber, mEmergencyName, mEmergencyNumber, mEvents);
-            DatabaseReference registerRef = FirebaseDatabase
-                    .getInstance()
-                    .getReference(Constants.FIREBASE_CHILD_REGISTERS);
-            registerRef.push().setValue(mRegister);
-            Toast.makeText(RegistrationActivity.this, "The registeration form is Sent to FireBase DB", Toast.LENGTH_LONG).show();
-            Log.i("register-------", "sent");
+                ArrayList<String> mEvents = (ArrayList<String>) setList;
+                RegisterMember mRegister = new RegisterMember(mFirstName, mLastName, mEmail
+                        , mPhoneNumber, mEmergencyName, mEmergencyNumber, mEvents);
+                DatabaseReference registerRef = FirebaseDatabase
+                        .getInstance()
+                        .getReference(Constants.FIREBASE_CHILD_REGISTERS);
+                registerRef.push().setValue(mRegister);
+                Toast.makeText(RegistrationActivity.this, "The registeration form is Sent to FireBase DB", Toast.LENGTH_LONG).show();
+                Log.i("register-------", "sent");
+            }
         }
         else {
             String mFirstName = mFirstNameUserInput.getText().toString();
@@ -320,12 +389,6 @@ public class RegistrationActivity extends AppCompatActivity {
         }
     }
 
-    public void saveFirstnameToFirebase(String firstname) {
-        mRegisterFirstNameReference.push().setValue(firstname);
-    }
-
-
-
     public String checkForEvent(Set<String> events, String event) {
 
             for (String e : events)
@@ -336,4 +399,46 @@ public class RegistrationActivity extends AppCompatActivity {
         return "";
     }
 
+    public void reset(View view) {
+        mLongCourseCheckBox.setVisibility(View.VISIBLE);
+        mLongCourseCost.setVisibility(View.VISIBLE);
+        mLongCourseDollarSign.setVisibility(View.VISIBLE);
+
+        mTenKCheckBox.setVisibility(View.VISIBLE);
+        mTenKCost.setVisibility(View.VISIBLE);
+        mTenKDollarSign.setVisibility(View.VISIBLE);
+
+        mHalfMarathonCheckBox.setVisibility(View.VISIBLE);
+        mHalfMarathonCost.setVisibility(View.VISIBLE);
+        mHalfMarathonDollarSign.setVisibility(View.VISIBLE);
+
+        mTryATriCheckBox.setVisibility(View.VISIBLE);
+        mTryATriCost.setVisibility(View.VISIBLE);
+        mTryATriDollarSign.setVisibility(View.VISIBLE);
+
+        mSprintCheckBox.setVisibility(View.VISIBLE);
+        mSprintCost.setVisibility(View.VISIBLE);
+        mSprintDollarSign.setVisibility(View.VISIBLE);
+
+        mOlympicCheckBox.setVisibility(View.VISIBLE);
+        mOlympicCost.setVisibility(View.VISIBLE);
+        mOlympicDollarSign.setVisibility(View.VISIBLE);
+
+        mLongCourseCheckBox.setSelected(false);
+        mLongCourseCheckBox.setChecked(false);
+        mTenKCheckBox.setSelected(false);
+        mTenKCheckBox.setChecked(false);
+        mHalfMarathonCheckBox.setSelected(false);
+        mHalfMarathonCheckBox.setChecked(false);
+        mTryATriCheckBox.setSelected(false);
+        mTryATriCheckBox.setChecked(false);
+        mSprintCheckBox.setSelected(false);
+        mSprintCheckBox.setChecked(false);
+        mOlympicCheckBox.setSelected(false);
+        mOlympicCheckBox.setChecked(false);
+
+        eventsChosen.clear();
+        mEventsChosen.setText(eventsChosen.toString());
+    }
 }
+
