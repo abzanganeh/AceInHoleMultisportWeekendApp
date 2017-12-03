@@ -337,21 +337,30 @@ public class RegistrationActivity extends AppCompatActivity {
         if (witchChecked) {
             if( mFirstNameUserInput.getText().toString().trim().equals("")) {
                 mFirstNameUserInput.setError("First name is required!");
+                mFirstNameUserInput.setHint("please enter First name");
             }
             else if( mLastNameUserInput.getText().toString().trim().equals("")) {
                 mLastNameUserInput.setError("Last name is required!");
+                mLastNameUserInput.setHint("please enter Last name");
             }
             else if (mEmailUserInput.getText().toString().trim().equals("")) {
                 mEmailUserInput.setError("Email is required!");
+                mEmailUserInput.setHint("please enter Email");
             }
             else if (mPhoneNumberUserInput.getText().toString().trim().equals("")) {
                 mPhoneNumberUserInput.setError("Phone Number is required!");
+                mPhoneNumberUserInput.setHint("please enter Phone Number");
+
             }
             else if (mEmergencyNameUserInput.getText().toString().trim().equals("")) {
-                mEmergencyNameUserInput.setError("Emergency User Name is required!");
+                mEmergencyNameUserInput.setError("Emergency Username is required!");
+                mEmergencyNameUserInput.setHint("please enter Emergency Username");
+
             }
             else if (mEmergencyNumberUserInput.getText().toString().trim().equals("")) {
                 mEmergencyNumberUserInput.setError("Emergency Number is required!");
+                mEmergencyNumberUserInput.setHint("please enter Emergency Number");
+
             } else {
                 String mFirstName = mFirstNameUserInput.getText().toString();
                 String mLastName = mLastNameUserInput.getText().toString();

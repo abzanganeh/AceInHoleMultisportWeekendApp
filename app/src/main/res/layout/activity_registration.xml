@@ -322,7 +322,7 @@
 
             <LinearLayout
                 android:id="@+id/total_cost"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/events_check_list"
                 android:layout_centerHorizontal="false"
@@ -341,6 +341,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_margin="@dimen/min_dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
@@ -370,6 +371,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/min_dp"
+                    android:layout_marginEnd="@dimen/mid_snd_dp"
                     android:background="@drawable/round_red_background"
                     android:onClick="reset"
                     android:text="@string/reset" />
@@ -408,7 +410,8 @@
                     android:hint="@string/first_name"
                     android:inputType="textPersonName"
                     android:paddingStart="@dimen/min_dp"
-                    android:textCursorDrawable="@android:drawable/status_bar_item_background" />
+                    android:textCursorDrawable="@android:drawable/status_bar_item_background"
+                    android:textSize="14sp" />
 
                 <EditText
                     android:id="@+id/last_name_user_input"
@@ -420,7 +423,8 @@
                     android:hint="@string/last_name"
                     android:inputType="textPersonName"
                     android:paddingStart="@dimen/min_dp"
-                    android:textCursorDrawable="@android:drawable/status_bar_item_background" />
+                    android:textCursorDrawable="@android:drawable/status_bar_item_background"
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -437,7 +441,8 @@
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:paddingStart="@dimen/min_dp"
-                android:textCursorDrawable="@android:drawable/status_bar_item_background" />
+                android:textCursorDrawable="@android:drawable/status_bar_item_background"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/phone_number_user_input"
@@ -451,7 +456,8 @@
                 android:hint="@string/phone_number"
                 android:inputType="number"
                 android:paddingStart="@dimen/min_dp"
-                android:textCursorDrawable="@android:drawable/status_bar_item_background" />
+                android:textCursorDrawable="@android:drawable/status_bar_item_background"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/emergency_contact_context"
@@ -485,7 +491,8 @@
                     android:hint="@string/full_name"
                     android:inputType="textPersonName"
                     android:paddingStart="@dimen/min_dp"
-                    android:textCursorDrawable="@android:drawable/status_bar_item_background" />
+                    android:textCursorDrawable="@android:drawable/status_bar_item_background"
+                    android:textSize="14sp" />
 
                 <EditText
                     android:id="@+id/emergency_number_user_input"
@@ -498,7 +505,8 @@
                     android:hint="@string/phone_number"
                     android:inputType="number"
                     android:paddingStart="@dimen/min_dp"
-                    android:textCursorDrawable="@android:drawable/status_bar_item_background" />
+                    android:textCursorDrawable="@android:drawable/status_bar_item_background"
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -525,7 +533,8 @@
                 android:hint="@string/comment_hint"
                 android:inputType="textMultiLine"
                 android:paddingStart="@dimen/min_dp"
-                android:textCursorDrawable="@android:drawable/status_bar_item_background" />
+                android:textCursorDrawable="@android:drawable/status_bar_item_background"
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/submit_button"
@@ -537,6 +546,15 @@
                 android:background="@drawable/round_red_background"
                 android:onClick="onSendRequestClicked"
                 android:text="@string/send_request" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/submit_button"
+                android:layout_marginBottom="@dimen/min_dp"
+                android:layout_marginStart="@dimen/min_dp"
+                android:text="@string/required_text" />
 
         </RelativeLayout>
 
