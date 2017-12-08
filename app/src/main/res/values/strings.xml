@@ -51,7 +51,7 @@
     <string name="sprint_swim_text">Course will offer a 1-loop &#189; mile swim</string>
     <string name="splash_n_dash_swim_text">Course will offer a 100 yard swim for kids 10 and under.</string>
     <string name="free_of_charge">FREE IF PARENT REGISTERS EVENT </string>
-    <string name="splash_n_dash_run_text">Course will offer 50 yard dashfor kids 10 and under.</string>
+    <string name="splash_n_dash_run_text">Course will offer 50 yard dash for kids 10 and under.</string>
     <string name="sprint_bike_text">Course will offer a the exact same 28 mile Bike Course as the Olympic distance</string>
     <string name="sprint_run_text">Course will offer a a 5km run.</string>
     <string name="tenk_k_run_text">The 10K event starts and finishes in the Athletes Village. The paths are approximately 6 ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.</string>
@@ -73,7 +73,7 @@
     <string name="total">Total Cost:</string>
     <string name="note_context">Tech shirts guaranteed to pre-registered participants only.</string>
     <string name="packet_pickup">PACKET PICK UP</string>
-    <string name="packet_pickup_text">All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR. \nPacket pick up hours: \n\u25BA Thursday 8&#8211;5 \n\u25BA Friday 9&#8211;noon\nNo day of event packet pick up. </string>
+    <string name="packet_pickup_text">All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR. \nPacket pick up hours: \n\u25BA Thursday 8&#8211;5 \n\u25BA Friday 9&#8211;noon\nNo day of event packet pick up.  </string>
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>

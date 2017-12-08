@@ -55,7 +55,7 @@ public class FirstPageActivity extends AppCompatActivity{
         Event tryATri = new Event("Try-a-Tri", "Sun 7/17/2017","8:20 AM", 65,
                 getResources().getString(R.string.try_a_tri_swim_text), getResources().getString(R.string.try_a_tri_bike_text),
                 getResources().getString(R.string.try_a_tri_run_text));
-        Event splashNDash = new Event("Splash n Dash", "Sun 7/17/2017","8:20 AM", 15,
+        Event splashNDash = new Event("Splash n Dash", "Sun 7/17/2017","12:00 PM", 15,
                 getResources().getString(R.string.splash_n_dash_swim_text), "",
                 getResources().getString(R.string.splash_n_dash_run_text));
 

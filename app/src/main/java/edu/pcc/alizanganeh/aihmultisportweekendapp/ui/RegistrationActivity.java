@@ -271,12 +271,6 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mTotalCostText.setText(String.valueOf(countTotalCost()));
                 mEventsChosen.setText(eventsChosen.toString());
-                mSprintCheckBox.setVisibility(View.INVISIBLE);
-                mSprintCost.setVisibility(View.INVISIBLE);
-                mSprintDollarSign.setVisibility(View.INVISIBLE);
-                mTryATriCheckBox.setVisibility(View.INVISIBLE);
-                mTryATriCost.setVisibility(View.INVISIBLE);
-                mTryATriDollarSign.setVisibility(View.INVISIBLE);
                 mSplashNDashFreeCheckBox.setVisibility(View.INVISIBLE);
                 mSplashNDashFreeCost.setVisibility(View.INVISIBLE);
             }
@@ -288,12 +282,6 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mTotalCostText.setText(String.valueOf(countTotalCost()));
                 mEventsChosen.setText(eventsChosen.toString());
-                mSprintCheckBox.setVisibility(View.INVISIBLE);
-                mSprintCost.setVisibility(View.INVISIBLE);
-                mSprintDollarSign.setVisibility(View.INVISIBLE);
-                mTryATriCheckBox.setVisibility(View.INVISIBLE);
-                mTryATriCost.setVisibility(View.INVISIBLE);
-                mTryATriDollarSign.setVisibility(View.INVISIBLE);
                 mSplashNDashCheckBox.setVisibility(View.INVISIBLE);
                 mSplashNDashCost.setVisibility(View.INVISIBLE);
                 mSplashNDashDollarSign.setVisibility(View.INVISIBLE);
@@ -437,7 +425,7 @@ public class RegistrationActivity extends AppCompatActivity {
                         .getInstance()
                         .getReference(Constants.FIREBASE_CHILD_REGISTERS);
                 registerRef.push().setValue(mRegister);
-                Toast.makeText(RegistrationActivity.this, "The registeration form is Sent to FireBase DB", Toast.LENGTH_LONG).show();
+                Toast.makeText(RegistrationActivity.this, "Thank you for Registering! please read Notes bellow.", Toast.LENGTH_LONG).show();
                 Log.i("register-------", "sent");
             }
         }
@@ -453,7 +441,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     .getInstance()
                     .getReference(Constants.FIREBASE_CHILD_VOLUNTEER);
             volunteerRef.push().setValue(mVolunteer);
-            Toast.makeText(RegistrationActivity.this, "The volunteer form is Sent to FireBase DB", Toast.LENGTH_LONG).show();
+            Toast.makeText(RegistrationActivity.this, "Thank you for Volunteering! Your request is sent.", Toast.LENGTH_LONG).show();
             Log.i("volunteer-------", "sent");
         }
     }
