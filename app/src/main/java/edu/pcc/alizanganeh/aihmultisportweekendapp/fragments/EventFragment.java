@@ -32,6 +32,7 @@ public class EventFragment extends Fragment {
     @BindView(R.id.content_run) TextView mRun;
     @BindView(R.id.title_bike) TextView mTitleBike;
     @BindView(R.id.title_swim) TextView mTitleSwim;
+    @BindView(R.id.free_of_charge) TextView mFreeOfCharge;
     @BindView(R.id.run_content) LinearLayout mRunContent;
 
     private Event mEvent;
@@ -67,6 +68,9 @@ public class EventFragment extends Fragment {
         mDay.setText(mEvent.getDay());
         mTime.setText(mEvent.getTime());
         mCost.setText(String.valueOf(mEvent.getPrice()));
+        if (mEvent.getName().equals("Splash n Dash")) {
+            mFreeOfCharge.setText(getResources().getString(R.string.free_of_charge));
+        }
         mSwim.setText(mEvent.getSwim());
         if (mEvent.getSwim().equals("")) {
             Log.d("Swim is", "empty ----------------");

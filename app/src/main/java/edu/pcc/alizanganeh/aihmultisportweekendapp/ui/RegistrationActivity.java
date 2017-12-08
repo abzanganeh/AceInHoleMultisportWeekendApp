@@ -1,6 +1,5 @@
 package edu.pcc.alizanganeh.aihmultisportweekendapp.ui;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -25,10 +24,10 @@ import java.util.Set;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import edu.pcc.alizanganeh.aihmultisportweekendapp.utils.Constants;
 import edu.pcc.alizanganeh.aihmultisportweekendapp.R;
 import edu.pcc.alizanganeh.aihmultisportweekendapp.models.RegisterMember;
 import edu.pcc.alizanganeh.aihmultisportweekendapp.models.VolunteerMember;
+import edu.pcc.alizanganeh.aihmultisportweekendapp.utils.Constants;
 
 public class RegistrationActivity extends AppCompatActivity {
     private DatabaseReference mRegisterFirstNameReference;
@@ -58,6 +57,11 @@ public class RegistrationActivity extends AppCompatActivity {
     @BindView(R.id.try_a_tri_checkBox) CheckBox mTryATriCheckBox;
     @BindView(R.id.try_a_tri_cost) TextView mTryATriCost;
     @BindView(R.id.try_a_tri_dollar_sign) TextView mTryATriDollarSign;
+    @BindView(R.id.splash_n_dash_checkBox) CheckBox mSplashNDashCheckBox;
+    @BindView(R.id.splash_n_dash_cost) TextView mSplashNDashCost;
+    @BindView(R.id.splash_n_dash_dollar_sign) TextView mSplashNDashDollarSign;
+    @BindView(R.id.splash_n_dash_free_checkBox) CheckBox mSplashNDashFreeCheckBox;
+    @BindView(R.id.splash_n_dash_free_cost) TextView mSplashNDashFreeCost;
     @BindView(R.id.half_marathon_checkBox) CheckBox mHalfMarathonCheckBox;
     @BindView(R.id.half_marathon_cost) TextView mHalfMarathonCost;
     @BindView(R.id.half_marathon_dollar_sign) TextView mHalfMarathonDollarSign;
@@ -73,8 +77,6 @@ public class RegistrationActivity extends AppCompatActivity {
     private Set<String> eventsChosen = new HashSet<>();
 
 
-
-    private Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mRegisterFirstNameReference = FirebaseDatabase
@@ -153,7 +155,30 @@ public class RegistrationActivity extends AppCompatActivity {
                 eventsChosen.remove("TryATri");
             }
         }
+        if (mSplashNDashCheckBox.isChecked()) {
+            total += Constants.SPLASH_N_DASH_COST;
+            if (!(checkForEvent(eventsChosen, "SplashNDash").equals("SplashNDash"))) {
+                eventsChosen.add("SplashNDash");
+            }
 
+        }else {
+
+            if ( checkForEvent(eventsChosen, "SplashNDash").equals("SplashNDash")) {
+                eventsChosen.remove("SplashNDash");
+            }
+        }
+        if (mSplashNDashFreeCheckBox.isChecked()) {
+            total += Constants.SPLASH_N_DASH_FREE_COST;
+            if (!(checkForEvent(eventsChosen, "SplashNDashFree").equals("SplashNDashFree"))) {
+                eventsChosen.add("SplashNDashFree");
+            }
+
+        }else {
+
+            if ( checkForEvent(eventsChosen, "SplashNDashFree").equals("SplashNDashFree")) {
+                eventsChosen.remove("SplashNDashFree");
+            }
+        }
         if (mSprintCheckBox.isChecked()) {
             total += Constants.SPRINT_COST;
             if (!(checkForEvent(eventsChosen, "Sprint").equals("Sprint"))) {
@@ -239,7 +264,42 @@ public class RegistrationActivity extends AppCompatActivity {
                 mHalfMarathonDollarSign.setVisibility(View.INVISIBLE);
             }
         });
+//ToDo: add splash n dash to the click listener and reset
+        mSplashNDashCheckBox.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View view) {
+                mTotalCostText.setText(String.valueOf(countTotalCost()));
+                mEventsChosen.setText(eventsChosen.toString());
+                mSprintCheckBox.setVisibility(View.INVISIBLE);
+                mSprintCost.setVisibility(View.INVISIBLE);
+                mSprintDollarSign.setVisibility(View.INVISIBLE);
+                mTryATriCheckBox.setVisibility(View.INVISIBLE);
+                mTryATriCost.setVisibility(View.INVISIBLE);
+                mTryATriDollarSign.setVisibility(View.INVISIBLE);
+                mSplashNDashFreeCheckBox.setVisibility(View.INVISIBLE);
+                mSplashNDashFreeCost.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        mSplashNDashFreeCheckBox.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                mTotalCostText.setText(String.valueOf(countTotalCost()));
+                mEventsChosen.setText(eventsChosen.toString());
+                mSprintCheckBox.setVisibility(View.INVISIBLE);
+                mSprintCost.setVisibility(View.INVISIBLE);
+                mSprintDollarSign.setVisibility(View.INVISIBLE);
+                mTryATriCheckBox.setVisibility(View.INVISIBLE);
+                mTryATriCost.setVisibility(View.INVISIBLE);
+                mTryATriDollarSign.setVisibility(View.INVISIBLE);
+                mSplashNDashCheckBox.setVisibility(View.INVISIBLE);
+                mSplashNDashCost.setVisibility(View.INVISIBLE);
+                mSplashNDashDollarSign.setVisibility(View.INVISIBLE);
+
+            }
+        });
         mTryATriCheckBox.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -425,6 +485,10 @@ public class RegistrationActivity extends AppCompatActivity {
         mTryATriCost.setVisibility(View.VISIBLE);
         mTryATriDollarSign.setVisibility(View.VISIBLE);
 
+        mTryATriCheckBox.setVisibility(View.VISIBLE);
+        mTryATriCost.setVisibility(View.VISIBLE);
+        mTryATriDollarSign.setVisibility(View.VISIBLE);
+
         mSprintCheckBox.setVisibility(View.VISIBLE);
         mSprintCost.setVisibility(View.VISIBLE);
         mSprintDollarSign.setVisibility(View.VISIBLE);
@@ -432,6 +496,13 @@ public class RegistrationActivity extends AppCompatActivity {
         mOlympicCheckBox.setVisibility(View.VISIBLE);
         mOlympicCost.setVisibility(View.VISIBLE);
         mOlympicDollarSign.setVisibility(View.VISIBLE);
+
+        mSplashNDashCheckBox.setVisibility(View.VISIBLE);
+        mSplashNDashCost.setVisibility(View.VISIBLE);
+        mSplashNDashDollarSign.setVisibility(View.VISIBLE);
+
+        mSplashNDashFreeCheckBox.setVisibility(View.VISIBLE);
+        mSplashNDashFreeCost.setVisibility(View.VISIBLE);
 
         mLongCourseCheckBox.setSelected(false);
         mLongCourseCheckBox.setChecked(false);
@@ -445,6 +516,10 @@ public class RegistrationActivity extends AppCompatActivity {
         mSprintCheckBox.setChecked(false);
         mOlympicCheckBox.setSelected(false);
         mOlympicCheckBox.setChecked(false);
+        mSplashNDashCheckBox.setSelected(false);
+        mSplashNDashCheckBox.setChecked(false);
+        mSplashNDashFreeCheckBox.setSelected(false);
+        mSplashNDashFreeCheckBox.setChecked(false);
 
         eventsChosen.clear();
         mEventsChosen.setText(eventsChosen.toString());

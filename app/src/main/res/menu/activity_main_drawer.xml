@@ -23,6 +23,10 @@
             android:title="@string/try_a_tri" />
 
         <item
+            android:id="@+id/splash_n_dash"
+            android:title="@string/splash_n_dash" />
+
+        <item
             android:id="@+id/what_to_bring"
             android:title="@string/what_to_bring" />
         <item

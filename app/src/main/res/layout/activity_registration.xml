@@ -317,6 +317,64 @@
                             android:text="65" />
 
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/splash_n_dash_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/splash_n_dash_checkBox"
+                            style="@style/MyCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/splash_n_dash" />
+
+                        <TextView
+
+                            android:id="@+id/splash_n_dash_dollar_sign"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/min_dp"
+                            android:text="$" />
+
+                        <TextView
+                            android:id="@+id/splash_n_dash_cost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15 " />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/splash_n_dash_free_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/splash_n_dash_free_checkBox"
+                            style="@style/MyCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Splash n Dash"
+                             />
+
+                        <TextView
+                            android:id="@+id/splash_n_dash_free_cost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/min_dp"
+                            android:text="Free" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/free_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If parent Register Before." />
+
                 </LinearLayout>
             </LinearLayout>
 

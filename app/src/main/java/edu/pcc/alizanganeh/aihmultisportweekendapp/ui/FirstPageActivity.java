@@ -26,7 +26,7 @@ public class FirstPageActivity extends AppCompatActivity{
     @BindView(R.id.events_list) Spinner mEventsList;
     @BindView(R.id.title) TextView mTitleEvent;
 //    @BindView(R.id.empty_view) TextView mEmptyView;
-    private String[] eventNames = {"","Long Course", "Olympic", "10K", "Half Marathon", "Sprint", "Try-a-Tri"};
+    private String[] eventNames = {"","Long Course", "Olympic", "10K", "Half Marathon", "Sprint", "Try-a-Tri", "Splash n Dash"};
     private static final String TAG = FirstPageActivity.class.getSimpleName();
     private String spinnerText;
 
@@ -55,6 +55,10 @@ public class FirstPageActivity extends AppCompatActivity{
         Event tryATri = new Event("Try-a-Tri", "Sun 7/17/2017","8:20 AM", 65,
                 getResources().getString(R.string.try_a_tri_swim_text), getResources().getString(R.string.try_a_tri_bike_text),
                 getResources().getString(R.string.try_a_tri_run_text));
+        Event splashNDash = new Event("Splash n Dash", "Sun 7/17/2017","8:20 AM", 15,
+                getResources().getString(R.string.splash_n_dash_swim_text), "",
+                getResources().getString(R.string.splash_n_dash_run_text));
+
         final ArrayList<Event> events = new ArrayList<>();
         events.add(longCourse);
         events.add(olympic);
@@ -62,6 +66,7 @@ public class FirstPageActivity extends AppCompatActivity{
         events.add(halfMarathon);
         events.add(sprint);
         events.add(tryATri);
+        events.add(splashNDash);
 
 
         ArrayAdapter adapter = new ArrayAdapter(this, R.layout.spinner_item, eventNames);

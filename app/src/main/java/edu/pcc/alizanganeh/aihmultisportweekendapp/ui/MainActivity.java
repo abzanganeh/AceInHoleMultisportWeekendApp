@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity
     @BindView(R.id.olympic) TextView mOlympic;
     @BindView(R.id.sprint) TextView mSprint;
     @BindView(R.id.try_a_tri) TextView mTryATri;
+    @BindView(R.id.splash_n_dash) TextView mSplashNDash;
 
     private Activity mContext;
     final ArrayList<Event> events = new ArrayList<>();
@@ -77,6 +78,9 @@ public class MainActivity extends AppCompatActivity
         Event tryATri = new Event("Try-a-Tri", "Sun 7/17/2017","8:20 AM", 65,
                 getResources().getString(R.string.try_a_tri_swim_text), getResources().getString(R.string.try_a_tri_bike_text),
                 getResources().getString(R.string.try_a_tri_run_text));
+        Event splashNDash = new Event("Splash n Dash", "Sun 7/17/2017","8:20 AM", 15,
+                getResources().getString(R.string.splash_n_dash_swim_text), "",
+                getResources().getString(R.string.splash_n_dash_run_text));
 
         events.add(longCourse);
         events.add(olympic);
@@ -84,6 +88,7 @@ public class MainActivity extends AppCompatActivity
         events.add(halfMarathon);
         events.add(sprint);
         events.add(tryATri);
+        events.add(splashNDash);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -163,6 +168,13 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.try_a_tri) {
             int itemPosition = 5;
+            Intent intent = new Intent(MainActivity.this, EventViewHolderActivity.class);
+            intent.putExtra("position", itemPosition);
+            intent.putExtra("events", Parcels.wrap(events));
+            mContext.startActivity(intent);
+
+        }else if (id == R.id.splash_n_dash) {
+            int itemPosition = 6;
             Intent intent = new Intent(MainActivity.this, EventViewHolderActivity.class);
             intent.putExtra("position", itemPosition);
             intent.putExtra("events", Parcels.wrap(events));
